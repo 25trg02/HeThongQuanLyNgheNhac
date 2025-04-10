@@ -38,6 +38,7 @@
             this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
             this.txtPassword = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtUsername = new Guna.UI2.WinForms.Guna2TextBox();
+            this.lblErrorMessage = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.SuspendLayout();
             // 
             // lblTitle
@@ -62,7 +63,7 @@
             this.chkRemember.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.chkRemember.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkRemember.ForeColor = System.Drawing.Color.White;
-            this.chkRemember.Location = new System.Drawing.Point(48, 276);
+            this.chkRemember.Location = new System.Drawing.Point(48, 291);
             this.chkRemember.Name = "chkRemember";
             this.chkRemember.Size = new System.Drawing.Size(192, 29);
             this.chkRemember.TabIndex = 4;
@@ -138,7 +139,7 @@
             // 
             // guna2AnimateWindow1
             // 
-            this.guna2AnimateWindow1.AnimationType = Guna.UI2.WinForms.Guna2AnimateWindow.AnimateWindowType.AW_SLIDE;
+            this.guna2AnimateWindow1.AnimationType = Guna.UI2.WinForms.Guna2AnimateWindow.AnimateWindowType.AW_BLEND;
             this.guna2AnimateWindow1.TargetForm = this;
             // 
             // txtPassword
@@ -156,15 +157,17 @@
             this.txtPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtPassword.IconLeft = ((System.Drawing.Image)(resources.GetObject("txtPassword.IconLeft")));
+            this.txtPassword.IconRight = global::HeThongQuanLyNgheNhac.Properties.Resources.eye_closed;
             this.txtPassword.Location = new System.Drawing.Point(48, 214);
             this.txtPassword.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.PasswordChar = '●';
-            this.txtPassword.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txtPassword.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.txtPassword.PlaceholderText = "Nhập mật khẩu";
             this.txtPassword.SelectedText = "";
             this.txtPassword.Size = new System.Drawing.Size(300, 40);
             this.txtPassword.TabIndex = 3;
+            this.txtPassword.UseSystemPasswordChar = true;
+            this.txtPassword.IconRightClick += new System.EventHandler(this.txtPassword_IconRightClick);
             // 
             // txtUsername
             // 
@@ -184,12 +187,24 @@
             this.txtUsername.Location = new System.Drawing.Point(48, 156);
             this.txtUsername.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txtUsername.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.txtUsername.PlaceholderText = "Nhập tên đăng nhập";
             this.txtUsername.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.txtUsername.SelectedText = "";
             this.txtUsername.Size = new System.Drawing.Size(300, 40);
             this.txtUsername.TabIndex = 2;
+            // 
+            // lblErrorMessage
+            // 
+            this.lblErrorMessage.BackColor = System.Drawing.Color.Transparent;
+            this.lblErrorMessage.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblErrorMessage.ForeColor = System.Drawing.Color.Red;
+            this.lblErrorMessage.Location = new System.Drawing.Point(48, 264);
+            this.lblErrorMessage.Name = "lblErrorMessage";
+            this.lblErrorMessage.Size = new System.Drawing.Size(3, 2);
+            this.lblErrorMessage.TabIndex = 8;
+            this.lblErrorMessage.Text = null;
+            this.lblErrorMessage.Visible = false;
             // 
             // LogInForm
             // 
@@ -199,6 +214,7 @@
             this.BackColor = System.Drawing.SystemColors.Control;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(400, 500);
+            this.Controls.Add(this.lblErrorMessage);
             this.Controls.Add(this.btnRegister);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnLogin);
@@ -227,6 +243,7 @@
         private Guna.UI2.WinForms.Guna2Button btnExit;
         private Guna.UI2.WinForms.Guna2Button btnRegister;
         private Guna.UI2.WinForms.Guna2AnimateWindow guna2AnimateWindow1;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblErrorMessage;
     }
 }
 

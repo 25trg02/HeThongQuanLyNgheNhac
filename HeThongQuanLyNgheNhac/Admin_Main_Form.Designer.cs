@@ -126,7 +126,7 @@
             this.ContextMenuStrip_AmNhac.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
             this.ContextMenuStrip_AmNhac.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
             this.ContextMenuStrip_AmNhac.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.ContextMenuStrip_AmNhac.Size = new System.Drawing.Size(211, 144);
+            this.ContextMenuStrip_AmNhac.Size = new System.Drawing.Size(174, 116);
             // 
             // QL_BaiHat
             // 
@@ -334,7 +334,7 @@
             this.ContextMenuStrip_DoanhThu.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
             this.ContextMenuStrip_DoanhThu.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
             this.ContextMenuStrip_DoanhThu.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.ContextMenuStrip_DoanhThu.Size = new System.Drawing.Size(279, 88);
+            this.ContextMenuStrip_DoanhThu.Size = new System.Drawing.Size(279, 116);
             this.ContextMenuStrip_DoanhThu.Text = "Doanh Thu";
             // 
             // QL_GoiDangKy

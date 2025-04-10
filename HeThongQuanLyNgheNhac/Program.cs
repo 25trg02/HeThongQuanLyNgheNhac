@@ -16,7 +16,7 @@ namespace HeThongQuanLyNgheNhac
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Admin_Main_Form());
+            Application.Run(new LogInForm());
         }
     }
 }

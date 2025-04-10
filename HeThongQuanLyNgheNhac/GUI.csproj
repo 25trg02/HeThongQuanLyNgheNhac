@@ -143,6 +143,9 @@
     <None Include="Resources\settings.png" />
     <None Include="Resources\bell.png" />
     <None Include="Resources\notification-bell.png" />
+    <None Include="Resources\Register.png" />
+    <None Include="Resources\eye_closed.png" />
+    <None Include="Resources\eye_open.png" />
     <Content Include="Resources\setting.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
