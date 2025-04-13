@@ -61,11 +61,35 @@
     <Compile Include="Admin_Main_Form.Designer.cs">
       <DependentUpon>Admin_Main_Form.cs</DependentUpon>
     </Compile>
+    <Compile Include="DoanhThu\QLGoiDangKy.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DoanhThu\QLGoiDangKy.Designer.cs">
+      <DependentUpon>QLGoiDangKy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DoanhThu\QLNguoiDungDangKy.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DoanhThu\QLNguoiDungDangKy.Designer.cs">
+      <DependentUpon>QLNguoiDungDangKy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DoanhThu\QLThanhToan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DoanhThu\QLThanhToan.Designer.cs">
+      <DependentUpon>QLThanhToan.cs</DependentUpon>
+    </Compile>
     <Compile Include="LogInForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="LogInForm.Designer.cs">
       <DependentUpon>LogInForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainFormAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainFormAdmin.Designer.cs">
+      <DependentUpon>MainFormAdmin.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -83,8 +107,20 @@
     <EmbeddedResource Include="Admin_Main_Form.resx">
       <DependentUpon>Admin_Main_Form.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DoanhThu\QLGoiDangKy.resx">
+      <DependentUpon>QLGoiDangKy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DoanhThu\QLNguoiDungDangKy.resx">
+      <DependentUpon>QLNguoiDungDangKy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DoanhThu\QLThanhToan.resx">
+      <DependentUpon>QLThanhToan.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LogInForm.resx">
       <DependentUpon>LogInForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainFormAdmin.resx">
+      <DependentUpon>MainFormAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="RegisterForm.resx">
       <DependentUpon>RegisterForm.cs</DependentUpon>
